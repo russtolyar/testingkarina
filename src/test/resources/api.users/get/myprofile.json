@@ -1,0 +1,16 @@
+{
+  <#if login??>"login": "${login}",</#if>
+  <#if id??>"id": ${id},</#if>
+"node_id": "U_kgDOBYrK5w",
+"type": "User",
+"site_admin": false,
+"name": "Ruslan",
+"hireable": null,
+"bio": null,
+"plan": {
+"name": "free",
+"space": 976562499,
+"collaborators": 0,
+"private_repos": 10000
+}
+}
