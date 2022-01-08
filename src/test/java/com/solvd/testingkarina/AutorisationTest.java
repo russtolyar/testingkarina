@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
     @Test
     public void verifyMyAccountTest() {
         GetMyProfile getMyProfile = new GetMyProfile();
-        getMyProfile.setHeaders("Authorization=token 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");
+        getMyProfile.setHeaders("Authorization=token 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");
         getMyProfile.expectResponseStatus(HttpResponseStatusType.OK_200);
 
         getMyProfile.callAPI();
