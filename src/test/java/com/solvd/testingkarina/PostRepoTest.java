@@ -18,9 +18,9 @@ public class PostRepoTest {
         try {
             postNewRepository.setBodyContent(Files.readFile(file));
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException("Cannot Post repo " + e);
         }
-        postNewRepository.setHeaders("Authorization=token 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");
+        postNewRepository.setHeaders("Authorization=token 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");
         postNewRepository.expectResponseStatus(HttpResponseStatusType.CREATED_201);
 
         postNewRepository.callAPI();
